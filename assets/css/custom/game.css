@@ -1,0 +1,154 @@
+#contenedor-juego {
+    display: none;
+}
+
+#dialogo {
+    display: none;
+    font-family: Maxwell-Regular, sans-serif;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-top: solid rgba(228, 224, 182, 0.9) 1px;
+}
+
+div[role="dialog"] {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #333;
+    padding: 2%;
+    background-color: #F4F0EC;
+}
+
+.ui-dialog-title {
+    font-family: Maxwell-Bold, sans-serif;
+    font-size: 1.4em;
+}
+
+.ui-dialog-buttonset {
+    width: 100%;
+    text-align: center;
+    border-top: solid rgba(228, 224, 182, 0.9) 1px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.ui-dialog-buttonset button {
+    min-width: calc(80%/3);
+    margin: 0 5px;
+    padding: 4px;
+    font-family: Maxwell-Bold, sans-serif;
+    text-transform: uppercase;
+}
+
+#controles button {
+    min-width: 15%;
+    margin: 0 2%;
+    font-family: Maxwell-Bold, sans-serif;
+    font-size: 1.4em;
+}
+
+div.contenido #informacion {
+    width: 60%;
+    margin: 2% auto 0 auto;
+    padding: 2% 1% 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #386364;
+}
+
+div.contenido #informacion p {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    font-family: Maxwell-Bold, sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #333;
+    color: darkgoldenrod;
+}
+
+div.contenido #informacion p span {
+    font-family: Maxwell-Bold, sans-serif;
+    font-size: 1.3em;
+    color: goldenrod;
+    line-height: 0;
+}
+
+div.contenido #tablero {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1%;
+    background-color: #386364;
+    text-align: center;
+}
+
+div.contenido #tablero table {
+    margin: 0 auto;
+    background-color: rgb(206, 228, 231);
+}
+
+div.contenido #tablero td.celda {
+    width: 25px;
+    height: 25px;
+}
+
+div.contenido #tablero .ocupado {
+    background-color: darkred !important;
+}
+
+div.contenido #figuras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 60%;
+    height: 80px;
+    margin: 0 auto 2% auto;
+    padding: 2%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #386364;
+}
+
+div.contenido #figuras ul.figuras {
+    margin: auto 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div.contenido #figuras ul.figuras:hover li {
+    background-color: blue;
+}
+
+div.contenido #figuras ul.figuras li {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+
+div.contenido #figuras ul.figuras li.figura {
+    border: solid black 1px;
+    background-color: darkred;
+    box-shadow: 2px 2px 3px #000;
+
+    display: inline-block;
+}
+
+div.contenido #figuras ul.figuras li.vacio {
+    display: inline-block;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    div.contenido {
+      width: 96vw;
+      margin: 2% auto;
+      border-radius: 25px;
+      text-align: center;
+      background-image: none;
+    }
+
+    div.contenido #informacion,
+    div.contenido #tablero,
+    div.contenido #figuras {
+        width: 90%;
+    }
+  }
+
+

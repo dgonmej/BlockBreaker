@@ -1,0 +1,442 @@
+div.contenedor {
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url("../../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main#index div.contenido {
+  width: 50vw;
+  margin: 20% auto;
+  padding: 1%;
+}
+
+main#register div.contenido {
+  width: 50vw;
+  margin: 20% auto;
+  padding: 3%;
+  background-image: url("../../img/dgonmej_solutions.png");
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+main#login div.contenido {
+  width: 50vw;
+  margin: 20% auto;
+  padding: 3%;
+  background-image: url("../../img/dgonmej_solutions.png");
+  background-size: 30%;
+  background-position: 80% 30%;
+  background-repeat: no-repeat;
+}
+
+main#game div.contenido {
+  width: 50vw;
+  min-height: 60vh;
+  margin: 10% auto 20%;
+  padding: 4%;
+  background-image: url("../../img/dgonmej_solutions.png");
+  background-size: 50%;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+}
+
+main#score div.contenido {
+  width: 50vw;
+  min-height: 60vh;
+  margin: 10% auto 20%;
+  padding: 4%;
+}
+
+main#profile div.contenido {
+  width: 50vw;
+  min-height: 50vh;
+  margin: 15% auto 25%;
+  padding: 4%;
+  background-image: url("../../img/dgonmej_solutions.png");
+  background-size: 35%;
+  background-position: 90% 30%;
+  background-repeat: no-repeat;
+}
+
+div.contenido {
+  margin: 10% auto 12% auto;
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgba(228, 224, 182, 0.9);
+}
+
+div.contenido #instrucciones {
+  min-height: 40vh;
+  padding: 2%;
+  font-family: Maxwell-Regular, sans-serif;
+  border-radius: 50px;
+}
+
+div.contenido #instrucciones #acordeon {
+  padding: 0 2% 2%;
+  margin: 0;
+}
+
+div.contenido #instrucciones .titulo-inicio {
+  margin: 2% auto 0;
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #333;
+}
+
+div.contenido #instrucciones #acordeon {
+  font-family: Maxwell-Regular, sans-serif;
+  text-align: justify;
+}
+
+div.contenido #instrucciones #acordeon .subtitulo-inicio {
+  margin: 2% auto 0 auto;
+  font-size: 1.4em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+div.contenido #instrucciones #acordeon h4 {
+  margin: 0 auto 1%;
+  font-weight: bold;
+}
+
+div.contenido #instrucciones #acordeon h5 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.contenido #instrucciones #acordeon h5 p {
+  padding-left: 15px;
+  text-transform: initial;
+  font-weight: normal;
+}
+
+div.contenido #instrucciones #acordeon ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+div.contenido .titulo-puntuaciones {
+  margin-bottom: 2%;
+  padding-left: 2%;
+  font-family: Maxwell-Bold, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #999;
+  text-align: left;
+}
+
+div.contenido .puntuaciones {
+  height: 50vh;
+  font-family: Maxwell-Regular, sans-serif;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+div.contenido .puntuaciones h3 {
+  display: inline-block;
+  min-width: 200px;
+  font-weight: bold;
+  text-align: left;
+}
+
+div.contenido .puntuaciones span {
+  font-size: 2em;
+}
+
+div.contenido .titulo-perfil {
+  margin-bottom: 2%;
+  padding-left: 2%;
+  font-family: Maxwell-Bold, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #999;
+  text-align: left;
+}
+
+div.contenido .perfil {
+  font-family: Maxwell-Bold, sans-serif;
+  padding-left: 10%;
+  text-align: left;
+}
+
+div.contenido .perfil h3 {
+  font-weight: bold;
+  text-align: left;
+}
+
+div.contenido .perfil span {
+  font-family: Maxwell-Regular, sans-serif;
+  margin-left: 2%;
+  font-weight: normal;
+}
+
+div.contenido form {
+  width: 100%;
+  padding: 1% 4%;
+  text-align: left;
+  font-family: Maxwell-Regular, sans-serif;
+}
+
+div.contenido form .titulo-formulario {
+  margin-bottom: 2%;
+  font-family: Maxwell-Bold, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #999;
+}
+
+div.contenido form label {
+  width: 100%;
+  margin: 1% 0;
+}
+
+div.contenido form label span.texto-formulario {
+  display: inline-block;
+  width: 20%;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 2px #999;
+}
+
+div.contenido form label input {
+  padding: 0 4px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  background-color: rgba(238, 231, 204, 0.9);
+}
+
+div.contenido form #errores {
+  display: none;
+  width: 40%;
+  margin: 2% 0 1%;
+  padding: 1%;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: left;
+  border: solid rgb(226, 56, 56) 2px;
+  border-radius: 10px;
+  background-color: rgba(240, 175, 175, 0.6);
+}
+
+.error-formulario {
+  border: solid rgb(226, 56, 56) 2px;
+}
+
+.error {
+  position: absolute;
+  margin-left: 1%;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(248, 213, 213);
+  background-color: #bc1010;
+}
+
+.error:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -16px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #bc1010;
+  border-left: 8px solid transparent;
+}
+
+.boton {
+  margin: 1.5em 1em;
+  padding: 1% 2%;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 2px 5px #999999;
+  transition: 0.2s;
+  cursor: pointer;
+  color: #463007;
+  border-radius: 15px;
+  border: solid darkgoldenrod 2px;
+  background-color: goldenrod;
+}
+
+.boton:hover {
+  color: rgb(87, 72, 33);
+  box-shadow: 4px 4px 5px #999;
+}
+
+.efecto {
+  display: inline-block;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.efecto:hover {
+  -webkit-animation-name: wobble-bottom;
+  animation-name: wobble-bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+@keyframes wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    -ms-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    -ms-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    -ms-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    -ms-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    -ms-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+@media (max-width: 768px) {
+  main#index div.contenido {
+    margin: 20% auto 40%;
+    padding: 1%;
+  }
+
+  main#register div.contenido {
+    margin: 30% auto;
+    padding: 3%;
+    background-image: none !important;
+  }
+
+  main#login div.contenido {
+    margin: 40% auto;
+    padding: 3%;
+    background-image: none !important;
+  }
+
+  main#game div.contenido {
+    margin: 20% auto;
+    padding: 3%;
+    background-size: 75%;
+    background-position: center;
+  }
+
+  main#score div.contenido {
+    margin: 30% auto;
+    padding: 3%;
+    background-image: none !important;
+  }
+
+  main#profile div.contenido {
+    margin: 30% auto;
+    padding: 3%;
+    background-image: none !important;
+  }
+
+  div.contenido {
+    width: 96vw !important;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  div.contenido form {
+    width: 100%;
+    padding: 1% 4%;
+    text-align: center;
+  }
+
+  div.contenido form label span.texto-formulario {
+    width: 45%;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px #999;
+  }
+
+  div.contenido form #errores {
+    width: 100%;
+    margin: 4% 2%;
+    padding: 1% 5%;
+  }
+
+  .error {
+    display: block;
+    position: relative;
+    margin: 4% 0;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: rgb(248, 213, 213);
+    background-color: #bc1010;
+  }
+
+  .error:before {
+    content: none;
+  }
+}

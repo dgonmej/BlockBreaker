@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Código de JQUERY -->
+    <script src="../assets/js/lib/jquery-3.3.1.min.js"></script>
+
+    <!-- Enlaces de BOOTSTRAP -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+
+    <!-- Código javascript propio -->
+    <script src="../assets/js/custom/login.js"></script>
+
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="../assets/css/custom/main.css">
+    <link rel="stylesheet" href="../assets/css/custom/header.css">
+    <link rel="stylesheet" href="../assets/css/custom/body.css">
+    <link rel="stylesheet" href="../assets/css/custom/footer.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <title>BlockBreaker | Login</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid encabezado">
+                <!-- En la versión móvil se mostrará el nombre/icono del sitio y el botón de menú -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-desplegable" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html" title="BlockBreaker">
+                        <span class="texto-titulo">BLOCK BREAKER</span>
+                        <span class="glyphicon glyphicon-home"></span>
+                    </a>
+                </div>
+                <!-- Este es el contenido del menú que se despliega con el botón de menú-->
+                <div class="collapse navbar-collapse" id="menu-desplegable">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../index.html" title="Volver a Inicio">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                                <span class="texto-menu">Volver a Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portfolio/register.html" title="Registrarse">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="texto-menu">Registrarse</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid contenedor">
+        <main id="login">
+            <div class="contenido">
+                <form>
+                    <h2 class="titulo-formulario">Iniciar Sesión</h2>
+                    <label for="username">
+                        <span class="texto-formulario">Nombre de usuario: </span>
+                        <input type="text" id="username" />
+                    </label>
+                    <label for="password">
+                        <span class="texto-formulario">Contraseña: </span>
+                        <input type="password" id="password" />
+                    </label>
+                    <span id="errores"></span>
+                    <input type="button" value="Iniciar sesión" id="b_submit" class="boton efecto" />
+                    <input type="reset" value="Restablecer" id="b_reset" class="boton efecto" />
+                    <input type="button" value="Jugar como invitado" id="b_invited" class="boton efecto" />
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class="container-fluid pie">
+        <footer>
+            <div id="barra_top" class="row">
+                <div id="contenedor-menu_pie" class="col-xs-12 col-md-9">
+                    <ul id="menu_pie">
+                        <li>
+                            <a href="../index.html" title="Inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="https://cifpcesarmanrique.es/" title="Nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/kuEwT9ozm4y" target="_blank" title="Ubicación">Ubicación</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <ul id="rrss">
+                        <li>
+                            <a href="https://twitter.com/dgonmej" target="_blank" title="Twitter" class="icono fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/dgonmej" target="_blank" title="Facebook" class="icono fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:dgonmej10@hotmail.com" target="_blank" title="Email" class="icono fa-envelope"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/dgonmej" target="_blank" title="GitHub" class="icono fa-github"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="barra_bottom" class="row">
+                <div id="contenedor-validacion" class="col-xs-12 col-md-6 validacion">
+                    <ul id="validacion">
+                        <li title="HTML5">
+                            <span>&#10004;</span> HTML5</li>
+                        <li title="CSS3">
+                            <span>&#10004;</span> CSS3</li>
+                        <li title="JavaScript">
+                            <span>&#10004;</span> JQuery</li>
+                        <li title="BootStrap">
+                            <span>&#10004;</span> BootStrap</li>
+                    </ul>
+                </div>
+                <div id="contenedor-legalidad" class="col-xs-12 col-md-4">
+                    <ul id="legalidad">
+                        <li>
+                            <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso legal" class="aviso_legal">Aviso Legal</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/terms/regional.html" title="Condiciones" class="aviso_legal">Condiciones</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/privacy/" title="Privacidad" class="aviso_legal">Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <span class="autor">Autor:
+                        <a href="#" title="Diego González" class="autor-nombre">Diego González</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

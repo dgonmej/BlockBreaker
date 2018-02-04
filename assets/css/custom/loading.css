@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    -webkit-animation: animacion-fondo 0.5s alternate-reverse;
+            animation: animacion-fondo 0.5s alternate-reverse;
+}
+
+div.contenedor {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3% 2%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(228, 224, 182, 0.8);
+}
+
+@-webkit-keyframes animacion-fondo {
+    0% {background-size: 100%;}
+    100% {background-size: 105%;}
+  }
+  
+  @keyframes animacion-fondo {
+    0% {background-size: 100%;}
+    100% {background-size: 105%;}
+  }
+
+img {
+    width: 90%;
+    margin-bottom: 20px;
+    filter: drop-shadow(8px 8px 10px rgb(70, 68, 52));
+    -webkit-animation: logo 1s linear infinite;
+            animation: logo 1s linear infinite;
+}
+
+@-webkit-keyframes logo {
+    0% {filter: grayscale(20%);}
+    25% {filter: grayscale(30%);}
+    50% {filter: grayscale(20%);}
+    75% {filter: grayscale(30%);}
+    100% {filter: grayscale(20%);}
+}
+
+@keyframes logo {
+    0% {filter: grayscale(20%);}
+    25% {filter: grayscale(30%);}
+    50% {filter: grayscale(20%);}
+    75% {filter: grayscale(30%);}
+    100% {filter: grayscale(20%);}
+}
+
+#logo {
+    width: 60%;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#barra {
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    background-color: goldenrod;
+    -webkit-animation: progreso 8s linear;
+            animation: progreso 8s linear;
+}
+
+#texto {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    z-index: 1000;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2em;
+    color: rgb(122, 110, 29);
+}
+
+#texto:after {
+    content: '0%';
+    -webkit-animation: porcentaje 8s linear infinite;
+            animation: porcentaje 8s linear infinite;
+}
+
+@-webkit-keyframes progreso {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+@keyframes progreso {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+@-webkit-keyframes porcentaje {
+    0% {content: '0%';}
+    5% {content: '5%';}
+    10% {content: '10%';}
+    18% {content: '18%';}
+    25% {content: '25%';}
+    30% {content: '30%';}
+    42% {content: '42%';}
+    50% {content: '50%';}
+    56% {content: '56%';}
+    60% {content: '60%';}
+    75% {content: '75%';}
+    80% {content: '80%';}
+    87% {content: '87%';}
+    90% {content: '90%';}
+    95% {content: '95%';}
+    99% {content: '99%';}
+    100% {content: '100%';}
+}
+
+@keyframes porcentaje {
+    0% {content: '0%';}
+    5% {content: '5%';}
+    10% {content: '10%';}
+    18% {content: '18%';}
+    25% {content: '25%';}
+    30% {content: '30%';}
+    42% {content: '42%';}
+    50% {content: '50%';}
+    56% {content: '56%';}
+    60% {content: '60%';}
+    75% {content: '75%';}
+    80% {content: '80%';}
+    87% {content: '87%';}
+    90% {content: '90%';}
+    95% {content: '95%';}
+    99% {content: '99%';}
+    100% {content: '100%';}
+}
+
+@media (max-width: 768px) {
+    body {        
+        -webkit-animation: none;
+                animation: none;
+    }
+    
+    div.contenedor {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 8%;
+
+        -webkit-animation: size 1.5s alternate-reverse infinite;
+                animation: size 1.5s alternate-reverse infinite;
+    }
+
+    @-webkit-keyframes size {
+        0% {width: 90vw;}
+        25% {width: 86vw;}
+        50% {width: 90vw;}
+        75% {width: 86vw;}
+        100% {width: 90vw;}
+    }
+    
+    @keyframes size {
+        0% {width: 90vw;}
+        25% {width: 86vw;}
+        50% {width: 90vw;}
+        75% {width: 86vw;}
+        100% {width: 90vw;}
+    }
+    
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #logo {
+        width: 80%;
+        height: 2rem;
+    }
+    
+    #texto {
+        font-size: 1.1rem;
+    }
+}

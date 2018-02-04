@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Código de JQUERY -->
+    <script src="../assets/js/lib/jquery-3.3.1.min.js"></script>
+
+    <!-- Enlaces de BOOTSTRAP -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+
+    <!-- Código javascript propio -->
+    <script src="../assets/js/custom/main.js"></script>
+
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="../assets/css/custom/main.css">
+    <link rel="stylesheet" href="../assets/css/custom/header.css">
+    <link rel="stylesheet" href="../assets/css/custom/body.css">
+    <link rel="stylesheet" href="../assets/css/custom/footer.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <title>BlockBreaker | Profile</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid encabezado">
+                <!-- En la versión móvil se mostrará el nombre/icono del sitio y el botón de menú -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-desplegable" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/index.html" title="BlockBreaker">
+                        <span class="texto-titulo">BLOCK BREAKER</span>
+                        <span class="glyphicon glyphicon-home"></span>
+                    </a>
+                </div>
+                <!-- Este es el contenido del menú que se despliega con el botón de menú-->
+                <div class="collapse navbar-collapse" id="menu-desplegable">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="loading.html" title="Volver al Juego">
+                                <span class="glyphicon glyphicon-arrow-left"></span>
+                                <span class="texto-menu">Volver al Juego</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="score.html" title="Puntuaciones">
+                                <span class="glyphicon glyphicon-tasks"></span>
+                                <span class="texto-menu">Puntuaciones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html" title="Salir">
+                                <span class="glyphicon glyphicon-log-out"></span>
+                                <span class="texto-menu">Salir</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid contenedor">
+        <main id="profile">
+            <div class="contenido">
+                <h2 class="titulo-perfil">Tu perfil</h2>
+                <div class="perfil">
+                    <h3>Nombre de usuario:
+                        <span id="username"></span>
+                    </h3>
+                    <h3>Nombre:
+                        <span id="name"></span>
+                    </h3>
+                    <h3>Apellidos:
+                        <span id="surnmae"></span>
+                    </h3>
+                    <h3>Correo electrónico:
+                        <span id="email"></span>
+                    </h3>
+                    <h3>Puntuación:
+                        <span id="userScore"></span>
+                    </h3>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container-fluid pie">
+        <footer>
+            <div id="barra_top" class="row">
+                <div id="contenedor-menu_pie" class="col-xs-12 col-md-9">
+                    <ul id="menu_pie">
+                        <li>
+                            <a href="../index.html" title="Inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="https://cifpcesarmanrique.es/" title="Nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/kuEwT9ozm4y" target="_blank" title="Ubicación">Ubicación</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <ul id="rrss">
+                        <li>
+                            <a href="https://twitter.com/dgonmej" target="_blank" title="Twitter" class="icono fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/dgonmej" target="_blank" title="Facebook" class="icono fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:dgonmej10@hotmail.com" target="_blank" title="Email" class="icono fa-envelope"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/dgonmej" target="_blank" title="GitHub" class="icono fa-github"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="barra_bottom" class="row">
+                <div id="contenedor-validacion" class="col-xs-12 col-md-6 validacion">
+                    <ul id="validacion">
+                        <li title="HTML5">
+                            <span>&#10004;</span> HTML5</li>
+                        <li title="CSS3">
+                            <span>&#10004;</span> CSS3</li>
+                        <li title="JavaScript">
+                            <span>&#10004;</span> JavaScript</li>
+                        <li title="BootStrap">
+                            <span>&#10004;</span> BootStrap</li>
+                    </ul>
+                </div>
+                <div id="contenedor-legalidad" class="col-xs-12 col-md-4">
+                    <ul id="legalidad">
+                        <li>
+                            <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso legal" class="aviso_legal">Aviso Legal</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/terms/regional.html" title="Condiciones" class="aviso_legal">Condiciones</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/privacy/" title="Privacidad" class="aviso_legal">Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <span class="autor">Autor:
+                        <a href="#" title="Diego González" class="autor-nombre">Diego González</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
